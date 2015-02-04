@@ -283,8 +283,8 @@
 	  render:function() {
 	    return (
 	      React.createElement("div", {className: "search-component"}, 
-	      React.createElement("input", {type: "text", onChange: this.changeSearch}), 
-	      React.createElement("span", null, "You are searching for: ", this.state.search)
+	        React.createElement("input", {type: "text", onChange: this.changeSearch}), 
+	        React.createElement("p", null, React.createElement("span", null, "You are searching for: ", this.state.search))
 	      )
 	    );
 	  },

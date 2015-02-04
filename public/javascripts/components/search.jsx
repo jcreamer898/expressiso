@@ -9,8 +9,8 @@ var Search = React.createClass({
   render() {
     return (
       <div className="search-component">
-      <input type="text" onChange={this.changeSearch} />
-      <span>You are searching for: {this.state.search}</span>
+        <input type="text" onChange={this.changeSearch} />
+        <p><span>You are searching for: {this.state.search}</span></p>
       </div>
     );
   },
