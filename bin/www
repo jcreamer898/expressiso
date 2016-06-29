@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+require("babel-register")({
+  presets: ["es2015", "react"],
+});
+
 var debug = require('debug')('expressiso');
 var app = require('../app');
 

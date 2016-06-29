@@ -1,21 +1,17 @@
-var express = require('express');
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
 
-require("node-jsx").install({
-    harmony: true, 
-    extension: ".jsx"
-});
-
-var React = require("react"),
-    App = React.createFactory(require("../public/javascripts/components/app"));
+import { renderToString } from "react-dom/server";
+import App from "../public/javascripts/components/app";
+import React from "react";
 
 /* GET home page. */
-router.get('/', function(req, res) {
-  var markup = React.renderToString(App());      
+router.get("/", function(req, res) {
+  const markup = renderToString(<App />);
 
-  res.render('index', { 
-    title: 'Express',
-    markup: markup 
+  res.render("index", {
+    title: "Express",
+    markup: markup
   });
 });
 

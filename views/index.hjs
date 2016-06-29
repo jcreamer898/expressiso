@@ -3,11 +3,10 @@
   <head>
     <title>{{ title }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="javascripts/bundle.js"></script>
   </head>
   <body>
-    <div id="content">
-      {{{markup}}}
-    </div>
+    <div id="content">{{{markup}}}</div>
+
+    <script src="javascripts/bundle.js"></script>
   </body>
 </html>
