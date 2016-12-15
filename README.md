@@ -13,7 +13,7 @@ DEBUG=expressiso ./bin/www
 
 ### Building with webpack
 ```bash
-npm install -g webpack
-webpack --watch
+npm run build:watch  # Watch for changes and rebuild
+npm run build        # One-off build
 ```
 

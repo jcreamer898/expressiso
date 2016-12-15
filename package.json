@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "build:watch": "webpack --watch",
+    "build": "webpack"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.9.0",
